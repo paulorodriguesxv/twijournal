@@ -233,7 +233,7 @@ After downloading code, install poetry and execute `poetry install` inside proje
   - Alembic for database migrations
 ## Environment variable
 
-  Copy .env.template file to .env in the case do you not want to configure this variables in your operational system
+  Copy .env.template file to .env in the case you don't want to configure this variables in your operational system
 
  - `DATABASE_URL`=mysql+pymysql://mariadb:mariadb@127.0.0.1:3306/twijournal_db
  - `MAX_POSTS_PER_PAGE`: number of default posts displayed at user profile page
