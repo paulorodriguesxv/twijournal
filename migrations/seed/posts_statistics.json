@@ -1,0 +1,80 @@
+{
+"posts_statistics": [
+	{
+		"id" : 6,
+		"user_id" : 1,
+		"year" : 2022,
+		"year_day" : 106,
+		"post_counter" : 3
+	},
+	{
+		"id" : 5,
+		"user_id" : 1,
+		"year" : 2022,
+		"year_day" : 107,
+		"post_counter" : 5
+	},
+	{
+		"id" : 4,
+		"user_id" : 1,
+		"year" : 2022,
+		"year_day" : 108,
+		"post_counter" : 5
+	},
+	{
+		"id" : 1,
+		"user_id" : 1,
+		"year" : 2022,
+		"year_day" : 109,
+		"post_counter" : 5
+	},
+	{
+		"id" : 2,
+		"user_id" : 1,
+		"year" : 2022,
+		"year_day" : 110,
+		"post_counter" : 5
+	},
+	{
+		"id" : 10,
+		"user_id" : 1,
+		"year" : 2022,
+		"year_day" : 111,
+		"post_counter" : 1
+	},
+	{
+		"id" : 7,
+		"user_id" : 2,
+		"year" : 2022,
+		"year_day" : 109,
+		"post_counter" : 3
+	},
+	{
+		"id" : 3,
+		"user_id" : 2,
+		"year" : 2022,
+		"year_day" : 110,
+		"post_counter" : 5
+	},
+	{
+		"id" : 11,
+		"user_id" : 2,
+		"year" : 2022,
+		"year_day" : 111,
+		"post_counter" : 1
+	},
+	{
+		"id" : 9,
+		"user_id" : 3,
+		"year" : 2022,
+		"year_day" : 110,
+		"post_counter" : 3
+	},
+	{
+		"id" : 8,
+		"user_id" : 28,
+		"year" : 2022,
+		"year_day" : 110,
+		"post_counter" : 1
+	}
+]}

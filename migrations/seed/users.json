@@ -1,0 +1,45 @@
+{
+"users": [
+	{
+		"id" : 1,
+		"username" : "usera",
+		"email" : "usera@mail.com",
+		"name" : "user a",
+		"created_at" : "2022-04-01 03:00:00"
+	},
+	{
+		"id" : 2,
+		"username" : "userb",
+		"email" : "userb@mail.com",
+		"name" : "user b",
+		"created_at" : "2022-04-02 03:00:00"
+	},
+	{
+		"id" : 3,
+		"username" : "userc",
+		"email" : "userc@mail.com",
+		"name" : "user c",
+		"created_at" : "2022-04-02 03:00:00"
+	},
+	{
+		"id" : 27,
+		"username" : "userd",
+		"email" : "userd@mail.com",
+		"name" : "User D",
+		"created_at" : "2022-04-20 15:16:22"
+	},
+	{
+		"id" : 28,
+		"username" : "usere",
+		"email" : "usere@mail.com",
+		"name" : "User e",
+		"created_at" : "2022-04-20 15:16:22"
+	},
+	{
+		"id" : 29,
+		"username" : "userf",
+		"email" : "userf@mail.com",
+		"name" : "User F",
+		"created_at" : "2022-04-20 15:16:22"
+	}
+]}

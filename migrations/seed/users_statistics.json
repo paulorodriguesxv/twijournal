@@ -1,0 +1,45 @@
+{
+"users_statistics": [
+	{
+		"id" : 13,
+		"user_id" : 1,
+		"followee_counter" : 3,
+		"follower_counter" : 1,
+		"posts_counter" : 24
+	},
+	{
+		"id" : 14,
+		"user_id" : 2,
+		"followee_counter" : 1,
+		"follower_counter" : 1,
+		"posts_counter" : 9
+	},
+	{
+		"id" : 12,
+		"user_id" : 3,
+		"followee_counter" : 0,
+		"follower_counter" : 1,
+		"posts_counter" : 3
+	},
+	{
+		"id" : 16,
+		"user_id" : 27,
+		"followee_counter" : 0,
+		"follower_counter" : 1,
+		"posts_counter" : 0
+	},
+	{
+		"id" : 17,
+		"user_id" : 28,
+		"followee_counter" : 0,
+		"follower_counter" : 0,
+		"posts_counter" : 1
+	},
+	{
+		"id" : 18,
+		"user_id" : 29,
+		"followee_counter" : 0,
+		"follower_counter" : 0,
+		"posts_counter" : 0
+	}
+]}

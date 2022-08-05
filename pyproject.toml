@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "twijournal"
+version = "0.1.0"
+description = "TwiJournal is a new social media application"
+authors = ["Paulo Rodrigues <paulorodriguesxv@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.75.2"}
+SQLAlchemy = {extras = ["asyncio"], version = "^1.4.35"}
+injector = "^0.19.0"
+alembic = "^1.7.7"
+aiosqlite = "^0.17.0"
+python-decouple = "^3.6"
+PyJWT = "^2.3.0"
+PyMySQL = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+pytest-sugar = "^0.9.4"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

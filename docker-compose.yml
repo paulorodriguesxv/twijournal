@@ -1,0 +1,36 @@
+version: "3"
+services:
+  maria-db-twijournal:
+    container_name: maria-db-twijournal
+    image: docker.io/library/mariadb:10.5
+    volumes:
+      - database-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: mariadb
+      MYSQL_PASSWORD: mariadb
+      MYSQL_USER: mariadb
+      MYSQL_DATABASE: twijournal_db
+  twijournal-api:
+    build: .
+    container_name: twijournal-api
+    healthcheck:
+      test: "wget -q --tries=1 --spider http://localhost:8080/docs || exit 1"
+      interval: 15s
+      timeout: 20s
+      retries: 10
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=mysql+pymysql://mariadb:mariadb@maria-db-twijournal:3306/twijournal_db
+      - MAX_POSTS_PER_PAGE=5
+      - MAX_FEED_POSTS_PER_PAGE=10
+      - POST_URI=http://localhost:8000/posts/
+      - FEED_URI=http://localhost:8000/feeds/
+      - USER_MAX_POST_PER_DAY=500
+      - PORT=8000
+
+volumes:
+  database-data:
+    driver: local

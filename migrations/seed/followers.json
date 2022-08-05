@@ -1,0 +1,23 @@
+{
+"followers": [
+	{
+		"followee_id" : 1,
+		"follower_id" : 2,
+		"created_at" : "2022-04-19 03:00:00"
+	},
+	{
+		"followee_id" : 2,
+		"follower_id" : 1,
+		"created_at" : "2022-04-19 19:30:37"
+	},
+	{
+		"followee_id" : 3,
+		"follower_id" : 1,
+		"created_at" : "2022-04-19 20:34:35"
+	},
+	{
+		"followee_id" : 27,
+		"follower_id" : 1,
+		"created_at" : "2022-04-20 12:20:16"
+	}
+]}
