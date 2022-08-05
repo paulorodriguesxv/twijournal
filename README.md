@@ -195,19 +195,6 @@ This feautres implementation can be seen on the user API. Please see http://loca
   - test_should_have_zero_followee_when_unfollow_someone
   - test_should_have_followee_equal_two_when_follow_two_person
 
-### Extra **feature: Search**
-
-Only work on this extra feature if you have enough time to complete the required features and get through all three phases of the interview.
-
-- Implement a search feature that allows users to efficiently search through all posts
-- This search feature should not return reposts
-- This search feature should return quote posts, but only if the search matches the additional text added (do **not** return matches from the original post that was quoted on top of)
-- (For Phase 2) This search feature should return reply-to-posts
-
-**`I did not work on that feature. But in case I had to work on it, I would choose something approach using Elasticsearch. But for sure that would be a service desacopled from this base TwiJournal backend`**
-
-
-
 
 # Running it
 
