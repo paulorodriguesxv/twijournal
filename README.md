@@ -60,7 +60,7 @@ General infrastructure purpose
 ### Dependency Inversion and Dependency Injection
 
 Here are some examples of Dependency Inversion and Dependency Injection using injector.
-We choose to use injector because it is a lightweight and easy to use dependency injection library and it's framework independent.
+We choose to use injector because it is a lightweight and easy to use dependency injection library and it's framework agnostic/independent.
 
 Always as possible, use interfaces to define API contracts between components.
 
