@@ -17,23 +17,23 @@ We're open to suggestions and improvements.
 ## Project Structure
 
 ### Adapters
-  1. ednpoints
+  1. **endpoints**
       Endpoints are the classes that handle the requests to the server. It could be a REST API, or a GraphQL API, or a websocket API. In this example, we use a REST API from fastapi. But it easy to change to Flask, or any other framework, even AWS lambdas.
       
-      a. fastapi
-      b. Extending: flask and another framework, lambdaserver, etc.
+      1. **fastapi**
+      2. **Extending**: flask and another framework, lambdaserver, etc.
 
-  2. Gateway
+  2. **Gateway**
       Gateway is any component or layer that abstracts the communication with external services. Like database, cache, etc.
       Here we're using repository pattern to abstract the communication with the database.
 
-      a. SqlAlchemy
-        1. models
-        2. repository
-      b. Extending
+      1. **SqlAlchemy**
+           1. models
+           2. repository
+      2. **Extending**
         We could create a gateway to another services, MongoDB and other databases
    
-### business rules / use cases   
+### Use Cases / Business Rules
 
 The software in this layer contains application specific business rules. It encapsulates and implements all of the use cases of the system. These use cases orchestrate the flow of data to and from the entities, and direct those entities to use their enterprise wide business rules to achieve the goals of the use case.
 
@@ -43,16 +43,16 @@ We do, however, expect that changes to the operation of the application will aff
 
 Having this in mind, we can expect changes from FastAPI to Flask or SqlAlchemy to another framework doesn't affect the use-cases.
 
-**USE CASE NEVER SHOULD ACCESS EXTERNAL SERVICES DIRECTLY OR BE FRAMWORK SPECIFIC**
+*USE CASE NEVER SHOULD ACCESS EXTERNAL SERVICES DIRECTLY OR BE FRAMEWORK DEPENDENT*
 
-### entities
+### Entities
 
 Entities encapsulate Enterprise wide business rules. An entity can be an object with methods, or it can be a set of data structures and functions. It doesn’t matter so long as the entities could be used by many different applications in the enterprise.
 
 Repository pattern is used here.
 
 
-### infrastructure
+### Infrastructure
 
 General infrastructure purpose
 
@@ -62,7 +62,7 @@ General infrastructure purpose
 Here are some examples of Dependency Inversion and Dependency Injection using injector.
 We choose to use injector because it is a lightweight and easy to use dependency injection library and it's framework independent.
 
-
+Always as possible, use interfaces to define API contracts between components.
 
 ## Phase 1, coding
 
