@@ -6,7 +6,7 @@ email: paulorodriguesxv@gmail.com
 
 ## Overview
 
-The Project aims to provide an example of Clean Architecture  from Uncle Bob, using python. The project is a simple application that allows you to create a a new social media application called TwiJournal. TwiJournal is very similar to Twitter, but it has far fewer features.
+The Project aims to provide an example of Clean Architecture from Uncle Bob, using python and should be used only as an educational resource. The project is a simple application that allows you to create a new social media application called TwiJournal. TwiJournal is very similar to Twitter, but it has far fewer features.
 
 TwiJournal only has two pages, the homepage and the user profile page, which are described below. Other data and actions are also detailed below.
 
