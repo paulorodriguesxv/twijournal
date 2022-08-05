@@ -25,7 +25,7 @@ We're open to suggestions and improvements.
 
   2. **Gateway**
       Gateway is any component or layer that abstracts the communication with external services. Like database, cache, etc.
-      Here we're using repository pattern to abstract the communication with the database.
+      Here we're using interfaces to abstract the communication with the database.
 
       1. **SqlAlchemy**
            1. models
