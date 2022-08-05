@@ -18,7 +18,7 @@ We're open to suggestions and improvements.
 
 ### Adapters
   1. **endpoints**
-      Endpoints are the classes that handle the requests to the server. It could be a REST API, or a GraphQL API, or a websocket API. In this example, we use a REST API from fastapi. But it easy to change to Flask, or any other framework, even AWS lambdas.
+      Endpoints are the classes that handle the requests to the server. It could be a REST API, or a GraphQL API, or a websocket API. In this example, we use a REST API (REST Maturity level 3 - Hateoas) from fastapi. But it easy to change to Flask, or any other framework, even AWS lambdas.
       
       1. **fastapi**
       2. **Extending**: flask and another framework, lambdaserver, etc.
@@ -289,22 +289,29 @@ Actual coverage: 90%
 
 
 
-# Planning
-
-- Write down questions you have for the Product Manager about implementation.
-  - This feature seems to be very similar to a comment feature. Is this understanding correct?
-  - replying to a post should generate a new quote-post from the user who has replied the original post?
-  - The comments that will be displayed at this new feed have to follow what kind of order? More relevants first, newers first, etc?
-  - How much replies have to be displyed at first page view, I mean, how to set a order?
-  - Will be possible to reply a reply?
-
-
-- Write about how you would solve this problem in as much detail as possible. Write about all of the changes to database/front-end/api/etc that you expect. You should write down any assumptions you are making from any questions for the Product Manager that you previously mentioned.
-   - It is not possible to set which changes or architectural path to follow because there are a few fundamental points opened here. But from a top-bottom view, we need a new mechanism to store data and link them with posts. It will be necessary to have a new API endpoint, basically CRUD operations related to these replies. For our project approuch it's mean to create a new external access (endpoint/controller), change post use case to include reply operations and create some news entities.
-
-
 # Critique
 
 In a real world, I would split this service in at least two others services. One would be responsable to deal with post creating operations and other only forread post operations, like some a CQRS systems does, because I believe that read operations will happen more frequently than post creation. So, the services could scale 
 
 Maybe thinking about scalability, we could use a cloud provider and turn some endpoints int lambadas and use database as service. It's totally easy to implement in our project, basically we just need to create a new gateway layer to deal with lambadas as endpoints (today we have only rest_fastapi http endpoint).
+
+# Contributing
+ 
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D3
+
+
+## Credits
+ 
+Developer - Paulo Rodrigues (@paulorodriguesxv)
+
+## License
+ 
+The MIT License (MIT)
+
+Copyright (c) 2022 Paulo Rodrigues
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
